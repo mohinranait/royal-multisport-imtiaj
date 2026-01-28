@@ -1,0 +1,8 @@
+{
+  "name": "Royal Multisport Management",
+  "description": "A comprehensive slot-based venue booking and management system with integrated payments, AI insights, and financial reporting.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
