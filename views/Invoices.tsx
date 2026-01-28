@@ -126,7 +126,7 @@ export const InvoicesView: React.FC = () => {
               {/* Header */}
               <div className="flex justify-between items-start border-b border-slate-100 pb-6 mb-6">
                 <div>
-                  <h1 className="text-2xl font-black text-indigo-600 tracking-tighter">ROYAL MULTISPORT</h1>
+                  <h1 className="text-2xl font-black text-indigo-600 tracking-tighter">LEGENDS ARENA</h1>
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Management Portal</p>
                   <div className="mt-4 text-xs text-slate-500 space-y-0.5">
                     <p>Dhaka, Bangladesh</p>
