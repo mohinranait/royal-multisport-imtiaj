@@ -177,12 +177,12 @@ export const CalendarView: React.FC = () => {
               p-6 rounded-2xl border-2 text-left transition-all relative group
               ${slot.booking 
                 ? 'bg-indigo-50/50 border-indigo-100 hover:border-indigo-400 hover:shadow-md' 
-                : 'bg-white border-white hover:border-indigo-500 hover:shadow-lg active:scale-95 shadow-sm'
+                : 'bg-white border-white hover:border-[#24C002] hover:shadow-lg active:scale-95 shadow-sm'
               }
             `}
           >
             <div className="flex justify-between items-start mb-4">
-              <span className={`text-xs font-bold uppercase tracking-wider ${slot.booking ? 'text-indigo-400' : 'text-indigo-600'}`}>
+              <span className={`text-xs font-bold uppercase tracking-wider ${slot.booking ? 'text-indigo-400' : 'text-[#24C002]'}`}>
                 {slot.start} - {slot.end}
               </span>
               <span className="text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -265,7 +265,7 @@ export const CalendarView: React.FC = () => {
                 <label className="text-sm font-semibold text-gray-700">Select Client</label>
                 <button 
                   onClick={() => setIsQuickClientOpen(true)}
-                  className="text-xs text-indigo-600 font-bold hover:underline"
+                  className="text-xs text-[#24C002] font-bold hover:underline"
                 >
                   + New Client
                 </button>

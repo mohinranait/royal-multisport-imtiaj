@@ -88,11 +88,11 @@ export const VenuesView: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {db.venues.map(venue => (
-          <Card key={venue.id} className="group hover:shadow-md transition-all border-t-4 border-t-indigo-500">
+          <Card key={venue.id} className="group hover:shadow-md transition-all border-t-4 border-t-[#24C002]">
             <div className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div className="flex-1">
-                  <h4 className="text-xl font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">{venue.name}</h4>
+                  <h4 className="text-xl font-bold text-gray-900 group-hover:text-[#24C002] transition-colors">{venue.name}</h4>
                   <div className="flex items-center gap-1.5 mt-1 text-gray-500">
                     <span className="text-xs">📍</span>
                     <p className="text-xs truncate max-w-[200px]">{venue.address || 'No address set'}</p>
@@ -118,7 +118,7 @@ export const VenuesView: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Base Price</p>
-                  <div className="flex items-center gap-1.5 font-bold text-indigo-600 text-sm">
+                  <div className="flex items-center gap-1.5 font-bold text-[#24C002] text-sm">
                     <span>💰</span>
                     {formatCurrency(venue.basePrice)}
                   </div>
@@ -166,7 +166,7 @@ export const VenuesView: React.FC = () => {
       >
         <div className="space-y-5">
           <section className="space-y-4">
-            <h5 className="text-xs font-black text-indigo-600 uppercase tracking-tighter border-b pb-1">Basic Information</h5>
+            <h5 className="text-xs font-black text-[#24C002] uppercase tracking-tighter border-b pb-1">Basic Information</h5>
             <div>
               <label className="block text-xs font-bold text-gray-500 uppercase mb-1">Venue Name</label>
               <input 
@@ -190,7 +190,7 @@ export const VenuesView: React.FC = () => {
           </section>
 
           <section className="space-y-4">
-            <h5 className="text-xs font-black text-indigo-600 uppercase tracking-tighter border-b pb-1">Scheduling & Pricing</h5>
+            <h5 className="text-xs font-black text-[#24C002] uppercase tracking-tighter border-b pb-1">Scheduling & Pricing</h5>
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-bold text-gray-500 uppercase mb-1">Opening Time</label>
@@ -228,7 +228,7 @@ export const VenuesView: React.FC = () => {
                 <input 
                   type="number" 
                   placeholder="2000"
-                  className="w-full border rounded-xl p-3 text-sm bg-gray-50 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-bold text-indigo-600" 
+                  className="w-full border rounded-xl p-3 text-sm bg-gray-50 focus:ring-2 focus:ring-indigo-500 outline-none transition-all font-bold text-[#24C002]" 
                   value={formData.basePrice} 
                   onChange={e => setFormData({...formData, basePrice: Number(e.target.value)})} 
                 />
@@ -237,7 +237,7 @@ export const VenuesView: React.FC = () => {
           </section>
 
           <section className="space-y-4">
-            <h5 className="text-xs font-black text-indigo-600 uppercase tracking-tighter border-b pb-1">Additional Details</h5>
+            <h5 className="text-xs font-black text-[#24C002] uppercase tracking-tighter border-b pb-1">Additional Details</h5>
             <div>
               <label className="block text-xs font-bold text-gray-500 uppercase mb-1">Notes / Instructions</label>
               <textarea 

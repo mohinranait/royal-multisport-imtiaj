@@ -42,7 +42,7 @@ export const InvoicesView: React.FC = () => {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <Card className="p-6 bg-indigo-600 text-white shadow-lg relative overflow-hidden">
+        <Card className="p-6 bg-[#24C002] text-white shadow-lg relative overflow-hidden">
           <div className="relative z-10">
             <p className="text-[10px] text-indigo-100 font-black uppercase tracking-widest mb-1">Total Receivables</p>
             <h4 className="text-3xl font-black">
@@ -70,7 +70,7 @@ export const InvoicesView: React.FC = () => {
             <tbody className="divide-y divide-gray-100">
               {invoices.map(inv => (
                 <tr key={inv.id} className="text-sm hover:bg-indigo-50/30 transition-colors group">
-                  <td className="px-6 py-4 font-mono font-bold text-indigo-600">{inv.id}</td>
+                  <td className="px-6 py-4 font-mono font-bold text-[#24C002]">{inv.id}</td>
                   <td className="px-6 py-4">
                     <div className="font-bold text-slate-900">{inv.client?.name || 'Walk-in'}</div>
                     <div className="text-[10px] text-slate-400 font-medium">{inv.client?.phone}</div>
@@ -126,7 +126,7 @@ export const InvoicesView: React.FC = () => {
               {/* Header */}
               <div className="flex justify-between items-start border-b border-slate-100 pb-6 mb-6">
                 <div>
-                  <h1 className="text-2xl font-black text-indigo-600 tracking-tighter">LEGENDS ARENA</h1>
+                  <h1 className="text-2xl font-black text-[#24C002] tracking-tighter">LEGENDS ARENA</h1>
                   <p className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Management Portal</p>
                   <div className="mt-4 text-xs text-slate-500 space-y-0.5">
                     <p>Dhaka, Bangladesh</p>
@@ -201,7 +201,7 @@ export const InvoicesView: React.FC = () => {
                     <span>Amount Paid:</span>
                     <span>{formatCurrency(selectedInvoice.booking.amountPaid)}</span>
                   </div>
-                  <div className="flex justify-between text-sm font-black text-indigo-600 bg-indigo-50 p-2 rounded-lg mt-2">
+                  <div className="flex justify-between text-sm font-black text-[#24C002] bg-indigo-50 p-2 rounded-lg mt-2">
                     <span>Balance Due:</span>
                     <span>{formatCurrency(selectedInvoice.booking.totalAmount - selectedInvoice.booking.amountPaid)}</span>
                   </div>
@@ -210,7 +210,7 @@ export const InvoicesView: React.FC = () => {
 
               {/* Footer */}
               <div className="mt-12 pt-6 border-t border-slate-50 text-center">
-                <p className="text-[10px] text-slate-400 italic">Thank you for choosing Royal Multisport Management.</p>
+                <p className="text-[10px] text-slate-400 italic">Thank you for choosing LEGENDS ARENA Management.</p>
                 <p className="text-[9px] text-slate-300 mt-1 uppercase tracking-widest font-black">Computer Generated Invoice • Signature Not Required</p>
               </div>
             </div>

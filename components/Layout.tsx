@@ -34,7 +34,7 @@ export const Layout: React.FC<{ children: React.ReactNode; activeTab: string; on
       {/* Sidebar Mobile Toggle */}
       <button 
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-        className="lg:hidden fixed bottom-4 right-4 z-50 bg-indigo-600 text-white p-4 rounded-full shadow-lg"
+        className="lg:hidden fixed bottom-4 right-4 z-50 bg-[#24C002] text-white p-4 rounded-full shadow-lg"
       >
         {isSidebarOpen ? '✕' : '☰'}
       </button>
@@ -47,7 +47,7 @@ export const Layout: React.FC<{ children: React.ReactNode; activeTab: string; on
       `}>
         <div className="h-full flex flex-col">
           <div className="p-6">
-            <h1 className="text-xl font-bold tracking-tight text-indigo-400">ROYAL MULTISPORT</h1>
+            <h1 className="text-xl font-bold tracking-tight text-[#24C002]">LEGENDS ARENA</h1>
             <p className="text-xs text-slate-400 mt-1">Management Portal</p>
           </div>
 
@@ -64,7 +64,7 @@ export const Layout: React.FC<{ children: React.ReactNode; activeTab: string; on
                   }}
                   className={`
                     w-full flex items-center px-4 py-3 text-sm font-medium rounded-lg transition-colors
-                    ${active ? 'bg-indigo-600 text-white' : 'text-slate-300 hover:bg-slate-800 hover:text-white'}
+                    ${active ? `text-white bg-[#24C002]` : 'text-slate-300 hover:bg-slate-800 hover:text-white'}
                   `}
                 >
                   <span className="mr-3 text-lg">{item.icon}</span>
@@ -97,7 +97,7 @@ export const Layout: React.FC<{ children: React.ReactNode; activeTab: string; on
           <div className="flex items-center space-x-4">
             <span className="text-sm text-gray-500">{new Date().toDateString()}</span>
             <div className="h-8 w-px bg-gray-200"></div>
-            <button className="text-gray-400 hover:text-indigo-600">
+            <button className="text-gray-400 hover:text-[#24C002]">
               <span className="text-xl">🔔</span>
             </button>
           </div>

@@ -210,7 +210,7 @@ export const TransactionsView: React.FC = () => {
             <button 
               key={t}
               onClick={() => setFilterType(t as any)}
-              className={`px-4 py-1.5 rounded-full text-xs font-bold border transition-all ${filterType === t ? 'bg-indigo-600 border-indigo-600 text-white shadow-md' : 'bg-white text-gray-500 hover:bg-gray-50'}`}
+              className={`px-4 py-1.5 rounded-full text-xs font-bold border transition-all ${filterType === t ? 'bg-[#24C002] border-[#24C002] text-white shadow-md' : 'bg-white text-gray-500 hover:bg-gray-50'}`}
             >
               {t}
             </button>
@@ -267,7 +267,7 @@ export const TransactionsView: React.FC = () => {
                     <div className="flex justify-center gap-2">
                       <button 
                         onClick={() => handleOpenEdit(tx)}
-                        className="text-gray-400 hover:text-indigo-600 transition-colors p-1"
+                        className="text-gray-400 hover:text-[#24C002] transition-colors p-1"
                         title="Edit Transaction"
                       >
                         ✏️

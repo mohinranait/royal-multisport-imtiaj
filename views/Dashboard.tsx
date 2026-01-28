@@ -121,7 +121,7 @@ export const Dashboard: React.FC<{ onTabChange: (id: string) => void }> = ({ onT
       <Card className="overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between">
           <h4 className="font-semibold text-gray-800">Recent & Upcoming Bookings</h4>
-          <button onClick={() => onTabChange('calendar')} className="text-sm text-indigo-600 font-medium hover:underline">View Calendar</button>
+          <button onClick={() => onTabChange('calendar')} className="text-sm text-[#24C002] font-medium hover:underline">View Calendar</button>
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-left">

@@ -41,7 +41,7 @@ export const AIInsights: React.FC = () => {
           ))
         ) : (
           insights.map((insight, i) => (
-            <Card key={i} className="p-8 hover:border-indigo-300 transition-colors border-l-4 border-l-indigo-600">
+            <Card key={i} className="p-8 hover:border-indigo-300 transition-colors border-l-4 border-l-[#24C002]">
               <h4 className="text-lg font-bold text-gray-900 mb-2">{insight.title}</h4>
               <p className="text-gray-600 leading-relaxed text-sm">{insight.description}</p>
             </Card>

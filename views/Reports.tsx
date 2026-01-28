@@ -116,7 +116,7 @@ export const ReportsView: React.FC = () => {
           <p className="text-[10px] text-red-600 font-bold mt-1">Operational Costs</p>
         </Card>
 
-        <Card className={`p-6 border-l-4 ${filteredData.profit >= 0 ? 'border-l-indigo-600' : 'border-l-orange-600'} bg-slate-900 text-white`}>
+        <Card className={`p-6 border-l-4 ${filteredData.profit >= 0 ? 'border-l-[#24C002]' : 'border-l-orange-600'} bg-slate-900 text-white`}>
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1 opacity-70">Net Profit</p>
           <h3 className={`text-3xl font-black ${filteredData.profit >= 0 ? 'text-indigo-400' : 'text-orange-400'}`}>
             {formatCurrency(filteredData.profit)}
@@ -210,7 +210,7 @@ export const ReportsView: React.FC = () => {
           <h4 className="text-sm font-black text-slate-900 uppercase mb-2">Top Performer</h4>
           {filteredData.venueStats.length > 0 ? (
             <>
-              <p className="text-lg font-bold text-indigo-600">
+              <p className="text-lg font-bold text-[#24C002]">
                 {filteredData.venueStats.reduce((prev, current) => (prev.revenue > current.revenue) ? prev : current).name}
               </p>
               <p className="text-xs text-slate-400 mt-1 max-w-[200px]">

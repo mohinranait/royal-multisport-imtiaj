@@ -345,7 +345,7 @@ export const SlotViewer: React.FC = () => {
                 <button
                   key={m}
                   onClick={() => setPaymentMethod(m)}
-                  className={`py-3 px-1 text-xs font-black rounded-xl border-2 transition-all uppercase tracking-tighter ${paymentMethod === m ? 'bg-indigo-600 border-indigo-600 text-white shadow-lg' : 'bg-white border-slate-100 text-slate-400 hover:border-slate-200'}`}
+                  className={`py-3 px-1 text-xs font-black rounded-xl border-2 transition-all uppercase tracking-tighter ${paymentMethod === m ? 'bg-[#24C002] border-[#24C002] text-white shadow-lg' : 'bg-white border-slate-100 text-slate-400 hover:border-slate-200'}`}
                 >
                   {m}
                 </button>
@@ -421,7 +421,7 @@ export const SlotViewer: React.FC = () => {
                 type="number"
                 value={editFormData.basePrice}
                 onChange={e => setEditFormData({...editFormData, basePrice: Number(e.target.value)})}
-                className="w-full border-2 border-slate-50 rounded-xl p-3 text-sm bg-slate-50 font-black text-indigo-600 outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full border-2 border-slate-50 rounded-xl p-3 text-sm bg-slate-50 font-black text-[#24C002] outline-none focus:ring-2 focus:ring-indigo-500"
               />
             </div>
             <div>

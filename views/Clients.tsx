@@ -104,7 +104,7 @@ export const ClientsView: React.FC = () => {
         {/* Profile Header */}
         <Card className="p-8">
           <div className="flex flex-col md:flex-row gap-8 items-start md:items-center">
-            <div className="w-24 h-24 bg-indigo-600 text-white rounded-3xl flex items-center justify-center font-bold text-4xl shadow-lg">
+            <div className="w-24 h-24 bg-[#24C002] text-white rounded-3xl flex items-center justify-center font-bold text-4xl shadow-lg">
               {client.name.charAt(0)}
             </div>
             <div className="flex-1 space-y-2">
@@ -112,7 +112,7 @@ export const ClientsView: React.FC = () => {
                 <h2 className="text-3xl font-extrabold text-gray-900">{client.name}</h2>
                 <Badge color={client.active ? 'green' : 'slate'}>{client.active ? 'Active Member' : 'Inactive'}</Badge>
               </div>
-              <p className="text-gray-500 font-medium">Customer ID: <span className="font-mono text-indigo-600">{client.id}</span></p>
+              <p className="text-gray-500 font-medium">Customer ID: <span className="font-mono text-[#24C002]">{client.id}</span></p>
               <div className="flex flex-wrap gap-4 pt-2">
                 <div className="flex items-center gap-2 text-sm text-gray-600">
                   <span className="opacity-70">📞</span> {client.phone}

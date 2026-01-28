@@ -24,7 +24,7 @@ export const getAIInsights = async () => {
   };
 
   const prompt = `
-    Act as a business consultant for Royal Multisport Management. 
+    Act as a business consultant for LEGENDS ARENA Management. 
     Analyze the following business data and provide 4-5 actionable insights on:
     1. Revenue optimization
     2. Peak hour utilization
